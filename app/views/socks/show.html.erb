@@ -1,0 +1,7 @@
+<h1>Info About a Particular Sock</h1>
+<p>ID: <%= @sock.id %></p>
+<p>Department: <%= @sock.department %></p>
+<p>Color: <%= @sock.color %></p>
+<p>Size: <%= @sock.size %></p>
+<p>Pattern: <%= @sock.pattern %></p>
+<p><%= button_to "delete socks", "/socks/#{@sock.id}", method: :delete %>

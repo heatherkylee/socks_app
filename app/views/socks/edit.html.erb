@@ -1,0 +1,9 @@
+<h1>Edit a Sock</h1>
+
+<%= form_tag "/socks/#{@sock.id}", method: :patch do%>
+  <p>Department: <input type="text" name="department" value="<%= @sock.department %>"></p>
+  <p>Color: <input type="text" name="color" value="<%= @sock.color %>"></p>
+  <p>Size: <input type="number" name="size" value="<%= @sock.size %>"></p>
+  <p>Pattern: <input type="text" name="pattern" value="<%= @sock.pattern %>"></p>
+  <p><input type="submit" value="update sock"></p>
+<% end %>
